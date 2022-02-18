@@ -1,3 +1,24 @@
 /* Admin Dashboard Style Sheet */
 /* Grid will be used over flexbox for this project to style the Admin Dashboard */
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.dashboard {
+    /* Sets the dashboard grid box to the left side of the page with a unique background color*/
+    background-color: rgb(101, 148, 248);
+    color: white;
+    grid-row: 1 / 3;
+}
+
+.header {
+    grid-column: 2 / 3;
+}
+
+.content {
+    background-color: grey;
+    grid-row: 2 / 3;
+}

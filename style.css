@@ -11,14 +11,29 @@
     /* Sets the dashboard grid box to the left side of the page with a unique background color*/
     background-color: rgb(101, 148, 248);
     color: white;
+    justify-items: start;
+    padding: 10px;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+
+}
+
+.dashboard ul {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 18px;
+    justify-items: start;
+    align-items: center;
 }
 
 .header {
+    /*Sets the grid layout for the header across the top of the page with the user info*/
     grid-column: 2 / 3;
 }
 
 .content {
+    /*Sets the grid layout for the content portion of the page in the remaining space outside the header and dashboard*/
     background-color: grey;
     grid-row: 2 / 3;
 }

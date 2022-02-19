@@ -3,8 +3,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 300px 4fr;
+    grid-template-rows: 200px 5fr;
 }
 
 .dashboard {
@@ -83,9 +83,30 @@
 .projects {
     grid-column: 1 / 2;
 }
+.projCards {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+.projCards p {
+    justify-items: start;
+    align-items: start;
+    background-color: white;
+}
 
 .announcements {
     grid-column: 2 / 3;
+}
+
+.announceCards {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    justify-items: start;
+    align-items: space-evenly;
 }
 
 .trending {

@@ -12,94 +12,201 @@
     <!--Container for the entire page Grid-->
     <div class="container">
         <!--div containing the dashboard section to go across the left of the page with quick links-->
-        <div class="dashboard">
-            <h2>Dashboard</h2>
-            <ul id="Links">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-            <ul id="tools">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
-
-        </div>
+        <div class="sidebar">
+            <div class="dashboard">
+              <img class="dashboardIcon" src="./icons/view-dashboard.png" alt="dashboard-icon">
+              <h2>Dashboard</h2>
+            </div>
+            <div class="blockOne">
+              <div class="home">
+                <img src="./icons/home.png" alt="home-icon">
+                <h3>Home</h3>
+              </div>
+              <div class="profile">
+                <img src="./icons/card-account-details.png" alt="profile-icon">
+                <h3>Profile</h3>
+              </div>
+              <div class="messages">
+                <img src="./icons/message-reply.png" alt="messages-icon">
+                <h3>Messages</h3>
+              </div>
+              <div class="history">
+                <img src="./icons/clock-time-three.png" alt="history-icon">
+                <h3>History</h3>
+              </div>
+              <div class="tasks">
+                <img src="./icons/note-multiple.png" alt="tasks-icon" class="tasks">
+                <h3>Tasks</h3>
+              </div>
+              <div class="communities">
+                <img src="./icons/account-group.png" alt="communitites-icon">
+                <h3>Communities</h3>
+              </div>
+            </div>
+            <div class="blockTwo">
+              <div class="settings">
+                <img src="./icons/cog.png" alt="settings-icon">
+                <h3>Settings</h3>
+              </div>
+              <div class="support">
+                <img src="./icons/face-agent.png" alt="support-icon">
+                <h3>Support</h3>
+              </div>
+              <div class="privacy">
+                <img src="./icons/lock.png" alt="privacy-icon">
+                <h3>Privacy</h3>
+              </div>
+            </div>
+          </div>
 
         <!--div containing the header section to go across the top of the page with search bar and user info-->
         <div class="header">
-            <!--Div for Search bar-->
-            <div class="search">
-                <label for="search">Search</label>
-                <input type="text" placeholder="search" name="search">
+            <div class="searchbar">
+              <img src="./icons/magnify.png" alt="search-icon">
+              <input type="text">
             </div>
-            <!--Div for User Profile small-->
-            <div class="profile">
-                <h4>Unknown User</h4>
+            <div class="profileArea">
+              <img class="bellIcon" src="./icons/bell-ring-outline.png" alt="notification-icon">
+              <img src="./icons/face-woman-profile.png" alt="profile-picture" class="profilePictures">
+              <h4>Morgan Oakley</h4>
             </div>
-            <!--Div for UserName and User image-->
-            <div class="user">
-                <p>Hi there,</p><br>
-                <h1>Unknown User</h1>
+            <div class="greetingArea">
+              <img class="MainProfilePicture" src="./icons/face-woman-profile.png" alt="profile-picture">
+              <div class="userGreeting">
+                <h6>Hi there,</h6>
+                <h3>Morgan Oakley (@morgan)</h3>
+              </div>
             </div>
-            <!--Div for content buttons (new, upload, share)-->
-            <div class="buttons">
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
+            <div class="socialButtons">
+              <button>NEW</button>
+              <button>UPLOAD</button>
+              <button>SHARE</button>
             </div>
-
-        </div>
+          </div>
 
         <!--div containing the actual content for the page with site info, announcements,.. etc.-->
-        <div class="content">
-            <!--Div for project section of the content-->
-            <div class="projects">
-                <p>Your Projects</p>
-                <!--Div for projects sub-grid-->
-                <div class="projCards">
-                    <p><h5>Super Cool Project</h5> This project is so cool its not even funny. Only look at this
-                    project if you want to see the coolest thing you've ever seen in your life.</p>
-                    <p><h5>World Peace</h5> Finally found the answer to world peace! If you look at this project
-                    it goes into full detail on how to achieve it.</p>
-                    <p><h5>Billion Dollar App</h5> This project is the next billion dollar idea. Any major company
-                    will want to hire me after seeing this project for themselves.</p>
-                    <p><h5>Even Cooler Project</h5> This project even cooler than the super cool project. You will
-                    just have to take a look yourself because it's too cool to even describe.</p>
-                    <p><h5>Comedy App</h5> This app edits everything to make me funny. People love comedy and now
-                    everyone can be funny with this app.</p>
-                    <p><h5>No Clue</h5> I have absolutely no clue what this project does. Someone please take a look
-                    and let me know if they can figure it out because I have no clue what I'm doing.</p>
-
+        <main class="contentContainer">
+            <h3 class="contentHeadlines">Your Projects</h3>
+            <h3 class="contentHeadlines">Announcements</h3>
+            <div class="contentCards">
+        
+              <div class="contentCard">
+                <div class="cardText">
+                  <h5>Super Cool Project</h5>
+                  <p>Platea ullamcorper ultricies hac sagittis condimentum facilisi velit a molestie auctor pulvinar sed risus
+                    vulputate class neque morbi
+                  </p>
                 </div>
-            </div>
-            <!--Div for announcements section of the content-->
-            <div class="announce">
-                <p>Announcements</p>
-                <!--Div for Announcements sub-grid-->
-                <div class="announceCards">
-                    <p>Site Maintenance: Since this is a fake site it is literally always under maintenance.</p>
-                    <p>Community Share Day: Coming soon is community share day where everyone gets to share their projects.
-                        don't worry if they aren't that great. It's not like future employers are viewing them...</p>
-                    <p>Updated Provacy Policy: There is none. We got rid of it completely. Anyone can see your work...</p>
-
+                <div class="cardIcon"><img src="./icons/star-plus-outline.png" alt="favourite-button"><img
+                    src="./icons/eye-plus-outline.png" alt="watchlist-button"><img
+                    src="./icons/share-variant-outline.png" alt="share-button"></div>
+              </div>
+              <div class="contentCard">
+                <div class="cardText">
+                  <h5>Less Cool Project</h5>
+                  <p>Aptent habitant cursus sapien eleifend consectetur vestibulum turpis auctor sollicitudin magnis vitae sem
+                    proin dis mattis consequat natoque arcu imperdiet semper senectus integer neque nibh</p>
                 </div>
-            </div>
-            <!--Div for Trending users section of the content-->
-            <div class="trending">
-                <p>Trending</p>
-                <!--Div for Trending sub-grid-->
-                <div class="trendCards">
-
+                <div class="cardIcon"><img src="./icons/star-plus-outline.png" alt="favourite-button"><img
+                    src="./icons/eye-plus-outline.png" alt="watchlist-button"><img
+                    src="./icons/share-variant-outline.png" alt="share-button"></div>
+              </div>
+        
+              <div class="contentCard">
+                <div class="cardText">
+                  <h5>Impossible App</h5>
+                  <p>Eu hendrerit tempor faucibus finibus cursus eros dui penatibus conubia pharetra mollis</p>
                 </div>
+                <div class="cardIcon"><img src="./icons/star-plus-outline.png" alt="favourite-button"><img
+                    src="./icons/eye-plus-outline.png" alt="watchlist-button"><img
+                    src="./icons/share-variant-outline.png" alt="share-button"></div>
+              </div>
+        
+              <div class="contentCard">
+                <div class="cardText">
+                  <h5>Easy Peasy App</h5>
+                  <p>Sociosqu himenaeos magnis semper netus feugiat eleifend curabitur montes platea pellentesque fermentum
+                    varius sollicitudin ullamcorper turpis ridiculus sagittis maximus vehicula amet non ornare tincidunt
+                    bibendum</p>
+                </div>
+                <div class="cardIcon"><img src="./icons/star-plus-outline.png" alt="favourite-button"><img
+                    src="./icons/eye-plus-outline.png" alt="watchlist-button"><img
+                    src="./icons/share-variant-outline.png" alt="share-button"></div>
+        
+              </div>
+              <div class="contentCard">
+                <div class="cardText">
+                  <h5>Ad Blocker</h5>
+                  <p>Tempus justo venenatis elementum lacus in libero ornare arcu posuere efficitur laoreet nascetur porttitor
+                    accumsan aenean senectus vel sem nulla platea donec amet vestibulum curabitur</p>
+                </div>
+                <div class="cardIcon"><img src="./icons/star-plus-outline.png" alt="favourite-button"><img
+                    src="./icons/eye-plus-outline.png" alt="watchlist-button"><img
+                    src="./icons/share-variant-outline.png" alt="share-button"></div>
+              </div>
+        
+              <div class="contentCard">
+                <div class="cardText">
+                  <h5>Money Maker</h5>
+                  <p>Senectus posuere fames auctor vulputate proin pellentesque viverra habitant interdum lacus ut suscipit
+                    neque sapien cras ipsum sodales dolor commodo fermentum dictum ad urna justo sollicitudin convallis</p>
+                </div>
+                <div class="cardIcon"><img src="./icons/star-plus-outline.png" alt="favourite-button"><img
+                    src="./icons/eye-plus-outline.png" alt="watchlist-button"><img
+                    src="./icons/share-variant-outline.png" alt="share-button"></div>
+              </div>
             </div>
-
-        </div>
-
+            </div>
+        
+        
+        
+            <div class="rightArea">
+              <div class="announcementCards">
+                <div class="announcementCard">
+                  <h5>Site Maintenance</h5>
+                  <p>Praesent class facilisi feugiat porttitor fusce lorem fermentum volutpat eu varius venenatis tristique</p>
+                </div>
+                <div class="announcementCard">
+                  <h5>Community Share Day</h5>
+                  <p>Nostra gravida himenaeos nascetur maximus cursus aptent congue habitant posuere ullamcorper sollicitudin
+                    nullam</p>
+                </div>
+                <div class="announcementCard noBottomBorder">
+                  <h5>Upload Privacy Policy</h5>
+                  <p>Duis pellentesque cubilia commodo elementum iaculis neque posuere semper lacinia consequat lobortis
+                    himenaeos egestas tempus ornare</p>
+                </div>
+              </div>
+              <div class="trendingCards">
+                <h3 class="contentHeadlines" id="headlineTrending">Trending</h3>
+                <img class="profilePictures" src="./icons/face-woman-profile.png" alt="">
+                <div class="trendingCard">
+                  <h6>@tegan</h6>
+                  <p>World Peace Builder</p>
+                </div>
+                <img class="profilePictures" src="./icons/face-woman-profile.png" alt="">
+                <div class="trendingCard">
+                  <h6>@morgan</h6>
+                  <p>Super Cool Project</p>
+                </div>
+                <img class="profilePictures" src="./icons/face-man-profile.png" alt="">
+                <div class="trendingCard">
+                  <h6>@kendall</h6>
+                  <p>Life Changing App</p>
+                </div>
+                <img class="profilePictures" src="./icons/face-man-profile.png" alt="">
+                <div class="trendingCard">
+                  <h6>@alex</h6>
+                  <p>No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </main>
     </div>
 
 </body>

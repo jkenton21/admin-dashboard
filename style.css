@@ -30,6 +30,44 @@
 .header {
     /*Sets the grid layout for the header across the top of the page with the user info*/
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: start;
+    align-items: start;
+    padding: 10px;
+}
+
+.profile {
+    display: grid;
+    justify-items: end;
+    align-items: start;
+    font-size: 18px;
+}
+
+.user {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    padding: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttons button {
+    width: 100px;
+    background-color: rgb(101, 148, 248);
+    color: white;
 }
 
 .content {

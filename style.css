@@ -74,4 +74,21 @@
     /*Sets the grid layout for the content portion of the page in the remaining space outside the header and dashboard*/
     background-color: grey;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
